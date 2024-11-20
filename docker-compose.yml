@@ -12,6 +12,11 @@ services:
       MARIADB_ROOT_PASSWORD: $MARIADB_ROOT_PASSWORD
       MARIADB_DATABASE: wordpress
     container_name: ssv_db
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        tag: "ssv-myadmin"
   #Web
   ssv_wp:
     depends_on:
@@ -41,6 +46,11 @@ services:
     container_name: ssv_wp
     volumes:
       - ./wp-content:/var/www/html/wp-content
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        tag: "ssv-myadmin"
   #PhpMyAdmin
   ssv_myadmin:
     image: phpmyadmin:latest
@@ -53,6 +63,11 @@ services:
       UPLOAD_LIMIT: 100M
     depends_on:
       - ssv_db
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://localhost:514"
+        tag: "ssv-myadmin"
 volumes:
   db_data:
   wp-content:
