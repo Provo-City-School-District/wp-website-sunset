@@ -10,21 +10,12 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  sunset-child
 
- Color Pallet
- Primary -  blue - var(--primary-color)
- Secondary - orange - var(--secondary-color)
- Accent Color - White - #ffffff
  
 /*================================================================================================================
 Variables
 ================================================================================================================*/
 
 :root {
-	/* --even-tile-bg-color: #e1e9f4;
-	--odd-tile-bg-color: #cddbee;
-	--primary-color: var(--primary-color);
-	--secondary-color: var(--secondary-color);
-	--accent-color: #ffffff; */
 	--primary-color: #264165;
 	--secondary-color: #8A2012;
 	--accent-color: #ffffff;
