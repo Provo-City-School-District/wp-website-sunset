@@ -5,7 +5,7 @@
  Author:       Josh Espinoza, Rob Francom, Shauna Sprunger
  Author URI:   https://tech.provo.edu
  Template:     pcsd-2019-theme
- Version:      1.0.1
+ Version:      1.0.5
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  sunset-child
@@ -82,6 +82,12 @@ h4 {
 	font-family: 'Roboto', sans-serif;
 	color: var(--content-text);
 	line-height: 1.05em;
+}
+
+a h2:hover,
+a h3:hover,
+a h4:hover {
+	color: var(--link-hover-color);
 }
 
 #mainContent h1 {
