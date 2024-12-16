@@ -16,7 +16,7 @@ services:
       driver: syslog
       options:
         syslog-address: "udp://localhost:514"
-        tag: "ssv-myadmin"
+        tag: "ssv-db"
   #Web
   ssv_wp:
     depends_on:
@@ -50,7 +50,7 @@ services:
       driver: syslog
       options:
         syslog-address: "udp://localhost:514"
-        tag: "ssv-myadmin"
+        tag: "ssv-wp"
   #PhpMyAdmin
   ssv_myadmin:
     image: phpmyadmin:latest
